@@ -1,4 +1,8 @@
-
+minetest.register_node("cw_dirt:dirt", {
+	description = "Dirt",
+	tiles ={"mc_dirt.png"},
+	groups = {crumbly=3, soil=1},
+})
 
 minetest.register_node("cw_dirt:dirt_with_grass", {
 	description = "Dirt with Grass",
@@ -10,6 +14,7 @@ minetest.register_node("cw_dirt:dirt_with_grass", {
 		{name = "mc_dirt.png^default_grass_side.png",
 		tileable_vertical = false,}},
 	groups = {crumbly=3, soil=1, oddly_breakable_by_hand=1},
+	drop = "cw_dirt:dirt",
 })
 
 minetest.register_node("cw_dirt:dirt_with_snow", {
@@ -20,12 +25,7 @@ minetest.register_node("cw_dirt:dirt_with_snow", {
 		{name = "mc_dirt.png^default_snow_side.png",
 		tileable_vertical = false}},
 	groups = {crumbly=3, soil=1},
-})
-
-minetest.register_node("cw_dirt:dirt", {
-	description = "Dirt",
-	tiles ={"mc_dirt.png"},
-	groups = {crumbly=3, soil=1},
+	drop = "cw_dirt:dirt",
 })
 
 minetest.register_node("cw_dirt:junglegrass", {
@@ -37,4 +37,5 @@ minetest.register_node("cw_dirt:junglegrass", {
 	paramtype = "light",
 	walkable = false,
 	groups = {snappy=3},
+	drop = "cw_dirt:dirt",
 })
