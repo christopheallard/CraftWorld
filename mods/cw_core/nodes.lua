@@ -294,7 +294,17 @@ minetest.register_node("cw_core:cobble", {
 	tiles ={"default_cobble.png"},
 	is_ground_content = false,
 	groups = {cracky=3},
+	
 })
+
+minetest.register_craft({
+	output = "cw_core:cobble",
+	recipe = {
+		{"group:crumbly", "group:crumbly"},
+		{"group:crumbly", "group:crumbly"}
+	}
+})
+
 
 minetest.register_node("cw_core:mossycobble", {
 	description = "Mossy Cobblestone",
