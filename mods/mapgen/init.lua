@@ -9,7 +9,7 @@ minetest.register_alias("mapgen_water_source", "cw_water:water_source")
 minetest.register_alias("mapgen_river_water_source", "cw_water:river_water_source")
 
 -- Additional essential aliases for v6
-minetest.register_alias("mapgen_lava_source", "cw_core:lava_source")
+minetest.register_alias("mapgen_lava_source", "cw_lava:lava_source")
 minetest.register_alias("mapgen_dirt", "cw_dirt:dirt")
 minetest.register_alias("mapgen_dirt_with_grass", "cw_dirt:dirt_with_grass")
 minetest.register_alias("mapgen_sand", "cw_core:sand")
@@ -57,9 +57,9 @@ minetest.clear_registered_decorations()
 if minetest.settings:get_bool("devtest_register_biomes", true) then
 	minetest.register_biome({
 		name = "mapgen:grassland",
-		node_top = "cw_core:dirt_with_grass",
+		node_top = "cw_lava:lava_source",
 		depth_top = 1,
-		node_filler = "cw_core:dirt",
+		node_filler = "cw_lava:lava_source",
 		depth_filler = 1,
 		node_riverbed = "cw_core:sand",
 		depth_riverbed = 2,
