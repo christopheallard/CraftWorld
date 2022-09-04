@@ -5,8 +5,8 @@
 -- ESSENTIAL node aliases
 -- Basic nodes
 minetest.register_alias("mapgen_stone", "cw_stone:stone")
-minetest.register_alias("mapgen_water_source", "cw_core:water_source")
-minetest.register_alias("mapgen_river_water_source", "cw_core:river_water_source")
+minetest.register_alias("mapgen_water_source", "cw_water:water_source")
+minetest.register_alias("mapgen_river_water_source", "cw_water:river_water_source")
 
 -- Additional essential aliases for v6
 minetest.register_alias("mapgen_lava_source", "cw_core:lava_source")
