@@ -4,7 +4,7 @@
 
 -- ESSENTIAL node aliases
 -- Basic nodes
-minetest.register_alias("mapgen_stone", "cw_core:stone")
+minetest.register_alias("mapgen_stone", "cw_stone:stone")
 minetest.register_alias("mapgen_water_source", "cw_core:water_source")
 minetest.register_alias("mapgen_river_water_source", "cw_core:river_water_source")
 
@@ -18,7 +18,7 @@ minetest.register_alias("mapgen_leaves", "cw_core:leaves")
 minetest.register_alias("mapgen_apple", "cw_core:apple")
 
 -- Essential alias for dungeons
-minetest.register_alias("mapgen_cobble", "cw_core:cobble")
+minetest.register_alias("mapgen_cobble", "cw_stone:cobble")
 
 -- Optional aliases for v6 (they all have fallback values in the engine)
 if minetest.settings:get_bool("devtest_v6_mapgen_aliases", false) then

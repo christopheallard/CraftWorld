@@ -3,12 +3,12 @@ local WATER_VISC = 1
 local LAVA_VISC = 7
 
 
-minetest.register_node("cw_core:stone", {
-	description = "Stone",
+--minetest.register_node("cw_core:stone", {
+--	description = "Stone",
 	--tiles = {"default_stone.png"},
-	tiles ={{name='cw_stone_256x256.png',align_style='world', scale=16}},
-	groups = {cracky=3},
-})
+--	tiles ={{name='cw_stone_256x256.png',align_style='world', scale=16}},
+--	groups = {cracky=3},
+--})
 
 minetest.register_node("cw_core:desert_stone", {
 	description = "Desert Stone",
@@ -289,21 +289,21 @@ minetest.register_node("cw_core:lava_source", {
 	groups = {lava=3, liquid=1},
 })
 
-minetest.register_node("cw_core:cobble", {
-	description = "Cobblestone",
-	tiles ={"default_cobble.png"},
-	is_ground_content = false,
-	groups = {cracky=3},
+--minetest.register_node("cw_core:cobble", {
+--	description = "Cobblestone",
+--	tiles ={"default_cobble.png"},
+--	is_ground_content = false,
+--	groups = {cracky=3},
 	
-})
+--})
 
-minetest.register_craft({
-	output = "cw_core:cobble",
-	recipe = {
-		{"group:crumbly", "group:crumbly"},
-		{"group:crumbly", "group:crumbly"}
-	}
-})
+--minetest.register_craft({
+--	output = "cw_core:cobble",
+--	recipe = {
+--		{"group:crumbly", "group:crumbly"},
+--		{"group:crumbly", "group:crumbly"}
+--	}
+--})
 
 
 minetest.register_node("cw_core:mossycobble", {
