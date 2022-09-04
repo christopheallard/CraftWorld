@@ -1,6 +1,6 @@
 
 
-minetest.register_node("cw_core:dirt_with_grass", {
+minetest.register_node("cw_dirt:dirt_with_grass", {
 	description = "Dirt with Grass",
 	--tiles ={{name='cw_grass_256x256.png^(cw_rngmask_48x48.png^[resize:256x256^[opacity:16)',align_style='world', scale=16},
 	--tiles ={{name='cw_grass_256x256.png^[mask:cw_rngmask_48x48.png',align_style='world', scale=16},
@@ -12,7 +12,7 @@ minetest.register_node("cw_core:dirt_with_grass", {
 	groups = {crumbly=3, soil=1, oddly_breakable_by_hand=1},
 })
 
-minetest.register_node("cw_core:dirt_with_snow", {
+minetest.register_node("cw_dirt:dirt_with_snow", {
 	description = "Dirt with Snow",
 	tiles ={"basenodes_dirt_with_snow.png",
 		-- a little dot on the bottom to distinguish it from dirt
@@ -22,13 +22,13 @@ minetest.register_node("cw_core:dirt_with_snow", {
 	groups = {crumbly=3, soil=1},
 })
 
-minetest.register_node("cw_core:dirt", {
+minetest.register_node("cw_dirt:dirt", {
 	description = "Dirt",
 	tiles ={"mc_dirt.png"},
 	groups = {crumbly=3, soil=1},
 })
 
-minetest.register_node("cw_core:junglegrass", {
+minetest.register_node("cw_dirt:junglegrass", {
 	description = "Jungle Grass",
 	drawtype = "plantlike",
 	tiles ={"default_junglegrass.png"},
