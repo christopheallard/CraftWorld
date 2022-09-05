@@ -12,6 +12,3 @@ dofile(mt_mod_path.."/nodes.lua")
 
 -- Register Crafts
 dofile(mt_mod_path.."/crafts.lua")
-
--- Register Functions
-dofile(mt_mod_path.."/functions.lua")

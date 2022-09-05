@@ -12,3 +12,16 @@ minetest.register_node("cw_stone:cobble", {
 	groups = {cracky=3},
 	
 })
+
+minetest.register_node("cw_stone:desert_stone", {
+	description = "Desert Stone",
+	tiles = {"default_desert_stone.png"},
+	groups = {cracky=3},
+})
+
+minetest.register_node("cw_stone:mossycobble", {
+	description = "Mossy Cobblestone",
+	tiles ={"default_mossycobble.png"},
+	is_ground_content = false,
+	groups = {cracky=3},
+})
