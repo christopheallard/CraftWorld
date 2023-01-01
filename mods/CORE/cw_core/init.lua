@@ -3,10 +3,18 @@ local mt_mod_path = minetest.get_modpath(mt_current_mod_name)
 local mt_mod_conf = Settings(minetest.get_modpath(mt_current_mod_name))
 local mt_mod_names = minetest.get_modnames()
 
+--_G.registered_schematics = {}
+
+
+--_G.register_schematic = function(name, data)
+--	_G.registered_schematics[name] = data
+--end	
 
 --
 -- Node definitions
 --
+
+minetest.debug(minetest.registered_schematics)
 
 
 -- Register Item

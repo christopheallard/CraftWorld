@@ -54,6 +54,8 @@ end
 -- Register biomes for biome API
 --
 
+
+-- ?? minetest.clear_registered_schematics()
 minetest.clear_registered_biomes()
 minetest.clear_registered_decorations()
 
